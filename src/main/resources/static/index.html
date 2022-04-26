@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" charset="utf-8">
       <title>Spring Boot WebSocket Chat Application | CalliCoder</title>
       <link rel="stylesheet" href="/css/main.css" />
+	<style type="text/css">
+	body
+	 {
+	     background-image: url(Wall.png);
+	     background-repeat: repeat;
+	     -moz-background-size: 100%; /* Firefox 3.6+ */
+	     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+	     -o-background-size: 100%; /* Opera 9.6+ */
+	     background-size: 100%; /* Современные браузеры */
+	 }
+	 </style>
   </head>
   <body>
     <noscript>
-      <h2>Sorry! Your browser doesn't support Javascript</h2>
+      <h2>Ваш браузер не поддерживает java Script</h2>
     </noscript>
 
     <div id="username-page">
         <div class="username-page-container">
-            <h1 class="title">Type your username</h1>
+            <h1 class="title">Введите свое имя</h1>
             <form id="usernameForm" name="usernameForm">
                 <div class="form-group">
                     <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
@@ -27,7 +38,7 @@
     <div id="chat-page" class="hidden">
         <div class="chat-container">
             <div class="chat-header">
-                <h2>Maxim Pimenov WebSocket Chat!</h2>
+                <h2>Maxim Pimenov Lipetsk Chat!</h2>
             </div>
             <div class="connecting">
                 Connecting...
